@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <title>Food4U</title>
+    
+</head>
+<body>
+
+<div id="nav_login"> <!-- Barra de login y busqueda -->
+			
+    <form name="formLogin" method="post" action="login.php">
+    
+    <ul class="loginBox">
+      <li id="registroBtn"><a class="registro_gratis" href="http://localhost/weblocal/registro.php" target="_top">Regístrate Gratis!</a></li>
+      
+      <li><input type="text" name="user" tabindex="1" onblur="if(this.value=='') this.value='Nombre de Usuario';" onfocus="if(this.value=='Nombre de Usuario') this.value='';" value="Nombre de Usuario"/></li>
+      <li><input type="text" name="pass2" tabindex="2" style="display: inline;" value="Contraseña" onfocus="this.style.display = 'none'; document.formLogin.pass.style.display = 'inline'; document.formLogin.pass.focus();" /></li>
+      <li><input type="password" name="pass" tabindex="2" style="display: none;" onblur="if(this.value == '') {this.style.display = 'none'; document.formLogin.pass2.style.display = 'inline';}" /></li>
+  
+      <li id="entrarBtn"><a href="http://localhost/weblocal/entrar.php">Entrar</a></li>
+      <li id="recuperarBtn"><a href="http://localhost/weblocal/recuperar_pass.php" target="_top">¿Olvidaste tu contraseña?</a></li>
+    
+      
+      <li id="cajabusqueda"><input type="text" name="buscar" tabindex="4" onblur="if(this.value=='') this.value='Buscar';" onfocus="if(this.value=='Buscar') this.value='';" value="Buscar"/></li>
+      <li id="buscarBtn"><a href="http://localhost/weblocal/entrar.php">Buscar</a></li>
+    
+    </ul>	
+      
+    </form>
+  
+  
+  </div> <!-- end #nav_login --> 
+</body>
+</html>
